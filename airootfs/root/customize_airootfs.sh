@@ -56,7 +56,7 @@ function enableServicesFunc() {
     systemctl enable vboxservice.service
     systemctl enable bluetooth.service
     systemctl enable haveged
-    systemctl -fq enable NetworkManager
+    systemctl -fq enable NetworkManager-wait-online.service
     systemctl mask systemd-rfkill@.service
     systemctl mask systemd-rfkill.service
     systemctl mask systemd-rfkill.socket
