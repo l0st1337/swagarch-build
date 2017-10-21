@@ -1,5 +1,4 @@
 accountsservice
-adwaita-icon-theme
 alacarte
 alsa-firmware
 alsa-utils
@@ -103,7 +102,6 @@ linux-headers
 logrotate
 lvm2
 m4
-mac-os-lion-cursors
 make
 man-db
 man-pages
@@ -176,7 +174,6 @@ upower
 usb_modeswitch
 usbutils
 util-linux
-vibrancy-full-dark-blue
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
 wget
