@@ -83,7 +83,7 @@ function fixWifiFunc() {
 function setDefaultCursorFunc() {
     #Set Default Cursor Theme
     rm -rf /usr/share/icons/Default
-    ln -s /usr/share/icons/mac-rainbow-cursor/ /usr/share/icons/Default
+    ln -s /usr/share/icons/SwagArch/ /usr/share/icons/Default
 }
 
 function fontFix() {
