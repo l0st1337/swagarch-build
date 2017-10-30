@@ -80,12 +80,6 @@ function fixWifiFunc() {
     su -c 'echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.conf'
 }
 
-function setDefaultCursorFunc() {
-    #Set Default Cursor Theme
-    rm -rf /usr/share/icons/Default
-    ln -s /usr/share/icons/SwagArch/ /usr/share/icons/Default
-}
-
 function fontFix() {
     # To disable scaling of bitmap fonts (which often makes them blurry) 
     rm -rf /etc/fonts/conf.d/10-scale-bitmap-fonts.conf
@@ -163,7 +157,6 @@ doNotDisturbTheLiveUserFunc
 setDefaultsFunc
 addCalamaresToPlankDockFunc
 enableServicesFunc
-setDefaultCursorFunc
 fontFix
 fixWifiFunc
 fixPermissionsFunc
