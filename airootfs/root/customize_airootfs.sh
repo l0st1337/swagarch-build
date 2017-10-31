@@ -139,7 +139,8 @@ function fixHibernateFunc() {
 }
 
 function upgradeSystem() {
-    pacman -Syu --noconfirm
+    pacman -Sc --noconfirm
+    pacman -Syyu --noconfirm
 }
 
 function umaskFunc() {
@@ -147,7 +148,7 @@ function umaskFunc() {
     umask 022
 }
 
-initkeysFunc
+umaskFunc
 localeGenFunc
 setTimeZoneAndClockFunc
 editOrCreateConfigFilesFunc
@@ -160,7 +161,6 @@ enableServicesFunc
 fontFix
 fixWifiFunc
 fixPermissionsFunc
-initkeysFunc
 fixHibernateFunc
+initkeysFunc
 upgradeSystem
-umaskFunc
