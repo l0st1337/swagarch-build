@@ -31,10 +31,16 @@ function setDefaultsFunc() {
 
 function initkeysFunc() {
     #Setup Pacman
-    pacman-key --init archlinux
+    pacman-key --init
     pacman-key --populate archlinux
-    pacman-key --init swagarch
     pacman-key --populate swagarch
+}
+
+function fixHaveged(){
+    systemctl start haveged
+    systemctl enable haveged
+
+    rm -fr /etc/pacman.d/gnupg
 }
 
 function fixPermissionsFunc() {
@@ -55,7 +61,6 @@ function enableServicesFunc() {
     systemctl enable avahi-daemon.service
     systemctl enable vboxservice.service
     systemctl enable bluetooth.service
-    systemctl enable haveged
     systemctl -fq enable NetworkManager-wait-online.service
     systemctl mask systemd-rfkill@.service
     systemctl mask systemd-rfkill.service
@@ -138,11 +143,6 @@ function fixHibernateFunc() {
     sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 }
 
-function upgradeSystem() {
-    pacman -Sc --noconfirm
-    pacman -Syyu --noconfirm
-}
-
 function umaskFunc() {
     set -e -u
     umask 022
@@ -162,5 +162,5 @@ fontFix
 fixWifiFunc
 fixPermissionsFunc
 fixHibernateFunc
+fixHaveged
 initkeysFunc
-upgradeSystem
