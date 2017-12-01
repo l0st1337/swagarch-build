@@ -26,6 +26,7 @@ cups-pdf
 cups-pk-helper
 device-mapper
 diffutils
+dmidecode
 dosfstools
 e2fsprogs
 efibootmgr
@@ -79,7 +80,6 @@ haveged
 hblox-git
 hunspell
 inetutils
-intel-ucode
 iproute2
 iputils
 ipw2100-fw
@@ -139,6 +139,7 @@ qt5-styleplugins
 qt5ct
 reiserfsprogs
 ristretto
+rsync
 s-nail
 sed
 shadow
