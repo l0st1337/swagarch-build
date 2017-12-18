@@ -43,10 +43,6 @@ function fixHaveged(){
     rm -fr /etc/pacman.d/gnupg
 }
 
-function postInstall(){
-    pacman -S intel-ucode
-}
-
 function fixPermissionsFunc() {
     #add missing /media directory
     mkdir -p /media
@@ -168,4 +164,3 @@ fixPermissionsFunc
 fixHibernateFunc
 fixHaveged
 initkeysFunc
-postInstall
