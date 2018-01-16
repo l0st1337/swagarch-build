@@ -129,6 +129,7 @@ pcmciautils
 perl
 pkg-config
 pkgfile
+plank
 polkit-gnome
 procps-ng
 psmisc
@@ -228,3 +229,4 @@ zd1211-firmware
 mugshot
 neofetch
 update-grub
+xed
