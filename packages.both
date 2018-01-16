@@ -69,6 +69,7 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 gstreamer-vaapi
+gtk-engine-murrine
 gtk-xfce-engine
 gtk3-print-backends
 gucharmap
@@ -135,10 +136,12 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 python-urllib3
+python-xdg
 qgnomeplatform-git
 qt5-styleplugins
 qt5ct
 quodlibet
+redshift
 reiserfsprogs
 ristretto
 rsync
@@ -222,4 +225,6 @@ yaourt
 zd1211-firmware
 
 #extra packages from SwagArch Repo
+mugshot
+neofetch
 update-grub
