@@ -44,10 +44,6 @@ function fixHaveged(){
 }
 
 function fixPermissionsFunc() {
-    #add missing /media directory
-    mkdir -p /media
-    chmod 755 -R /media
-
     #fix permissions
     chown root:root /
     chown root:root /etc
