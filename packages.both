@@ -221,8 +221,6 @@ xorg-server-common
 xorg-xinit
 xorg-xkill
 xorg-xrdb
-xreader
-yaourt
 zd1211-firmware
 
 #extra packages from SwagArch Repo
@@ -230,3 +228,5 @@ mugshot
 neofetch
 update-grub
 xed
+xreader
+trizen
